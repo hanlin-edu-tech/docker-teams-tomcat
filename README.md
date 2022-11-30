@@ -4,10 +4,10 @@
 
 Build
 ```
-docker build --tag ehanlin/teams-tomcat:$TOMCAT_VER --build-arg TOMCAT_VER=$TOMCAT_VER .
+docker build --platform=linux/amd64 --tag ehanlin/teams-tomcat:$TEAMS_TAG --build-arg TOMCAT_VER=8.5.84 .
 ```
 
 Publish
 ```
-docker push ehanlin/teams-tomcat:$TOMCAT_VER
+docker push ehanlin/teams-tomcat:$TEAMS_TAG
 ```

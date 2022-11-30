@@ -1,10 +1,7 @@
 <?xml version='1.0' encoding='utf-8'?>
 <Context sessionCookiePath="/">
 
-    <Manager className="tw.com.ehanlin.tomcatMongodbSession.MongoManager"
-             uri="mongodb://session-mongo:27017"
-             db="tutor"
-             collection="session" />
+    <Manager className="tw.com.ehanlin.tomcatSessionSynchronizer.teams.Teams103SessionSynchronizerManager"/>
 
 </Context>
 
